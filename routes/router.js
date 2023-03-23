@@ -1,8 +1,12 @@
 const express = require('express')
 const router = express.Router()
 
+
+const conexion = require('../database/db')
+
 // ruta para el home
 router.get('/', (req, res)=>{
+    conexion()
     res.render('index')
 })
 
