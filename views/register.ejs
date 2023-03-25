@@ -1,63 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-dark">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
-    <meta name="generator" content="Hugo 0.88.1" />
-    <title>taxihelpdesk/login</title>
+  <meta charset="utf-8" />
+  <title>Taxi HelpDesk | Register</title>
+  <meta name="description"
+    content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/font.css" type="text/css" />
+  <link rel="stylesheet" href="css/app.css" type="text/css" />
 
-
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-
-    <!-- Custom styles for this template -->
-    <link href="css/signin.css" rel="stylesheet" />
 </head>
 
-<body class="text-center">
-    <main class="form-signin">
-        <form id="formLogin" action="/login" method="POST">
-            <img class="mb-4" src="img/logo_taxi.svg" alt="" width="72" height="57" />
-            <h1 class="h3 mb-3 fw-normal">Inicio de sesion</h1>
-
-            <div class="form-floating">
-                <input type="text" class="form-control" id="user" name="user" placeholder="Usuario" />
-                <label for="user">Usuario</label>
-            </div>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="pass" name="pass" placeholder="Password" />
-                <label for="pass">Contrase&ntilde;a</label>
-            </div>
-
-            <div class="checkbox mb-3">
-            </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">
-                Login
-            </button>
-            <p class="mt-5 mb-3 text-muted">&copy; 2023–2027</p>
+<body>
+  <section id="content" class="m-t-lg wrapper-md animated fadeInDown">
+    <div class="container aside-xxl">
+      <a class="navbar-brand block" href="#">Taxis diamante</a>
+      <section class="panel panel-default m-t-lg bg-white">
+        <header class="panel-heading text-center">
+          <strong>Registro de Usuarios</strong>
+        </header>
+        <form action="index.html" class="panel-body wrapper-lg">
+          <div class="form-group">
+            <label class="control-label">Nombre Completo</label>
+            <input type="text" placeholder="Nombre" class="form-control input-lg">
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="user">Usuario</label>
+            <input type="email" class="form-control input-lg" id="user" name="user" placeholder="Usuario">
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="pass">Contrase&ntilde;a</label>
+            <input type="password" id="pass" name="pass" placeholder="Contrase&ntilde;a" class="form-control input-lg">
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Acepto <a href="#">Terminos y condiciones</a>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Registrar</button>
         </form>
-    </main>
+      </section>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer id="footer">
+    <div class="text-center padder clearfix">
+      <p>
+        <small>Qimba hazlo posible<br>&copy; 2023</small>
+      </p>
+    </div>
+  </footer>
+  <!-- / footer -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.js"></script>
+  <!-- App -->
+  <script src="js/app.js"></script>
+  <script src="js/app.plugin.js"></script>
+  <script src="js/slimscroll/jquery.slimscroll.min.js"></script>
+
 </body>
 
 </html>
-
