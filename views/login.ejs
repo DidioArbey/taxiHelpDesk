@@ -60,6 +60,22 @@
     <script src="js/app.js"></script>
     <script src="js/app.plugin.js"></script>
     <script src="js/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <% if(alert){ %>
+        <script>
+            Swal.fire({
+                title: '<%= alertTitle %>',
+                text: '<%= alertMessage %>',
+                icon : '<%= alertIcon %>',
+                showConfirmButton: <%= showConfirmButton %>
+                timer:'<%= timer %>'
+            }).then(() => {
+                window.location = '/<%= ruta %>'
+            })
+
+        </script>
+
+    <% } %>
 
 </body>
 

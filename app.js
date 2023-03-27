@@ -18,7 +18,7 @@ app.use(express.json())
 dotenv.config({path: './env/.env'})
 
 //setear las cokies
-//app.use(cokiesParser) comentada hasta empezar a trabajar con las cokies de sesion jwt
+app.use(cokiesParser())
 
 //llamar al enrutador
 app.use('/',require('./routes/router.js'))
