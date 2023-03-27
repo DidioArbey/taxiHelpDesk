@@ -16,10 +16,10 @@ router.get('/login', (req, res)=>{
 })
 // ruta para el register
 router.get('/register', (req, res)=>{
-    res.render('register',authController.register)
+    res.render('register')
 })
 
 //rutas para el controller
-router.post('/register')
+router.post('/register', authController.register)
 
 module.exports = router
