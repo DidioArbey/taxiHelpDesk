@@ -5,7 +5,7 @@ const authController = require('../controllers/authController')
 // const conexion = require('../database/db')
 //rutas para las vistas
 // ruta para el home
-router.get('/', (req, res)=>{
+router.get('/',authController.isAutheticad, (req, res)=>{
     // conexion()
     res.render('index')
 })
@@ -22,5 +22,6 @@ router.get('/register', (req, res)=>{
 //rutas para el controller
 router.post('/register', authController.register)
 router.post('/login', authController.login)
+router.get('/logout', authController.logout)
 
 module.exports = router
